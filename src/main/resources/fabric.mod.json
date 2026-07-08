@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "alwayshud",
+	"version": "${version}",
+	"name": "Always Survival HUD",
+	"description": "크리에이티브 모드에서도 체력바, 배고픔, 경험치/인챈트 바를 항상 표시합니다.",
+	"authors": [
+		"you"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.alwayshud.AlwaysHudClient"
+		]
+	},
+	"mixins": [
+		"alwayshud.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
